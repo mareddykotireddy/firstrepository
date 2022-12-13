@@ -15,7 +15,7 @@ function BasicExample() {
         <Form.Control type="email" placeholder="Enter email" name="name"onChange={(e) => setEmail(e.target.value)}/>
        
         <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
+          {/* We'll never share your email with anyone else. */}
         </Form.Text>
       </Form.Group>
     <label>password:</label>
