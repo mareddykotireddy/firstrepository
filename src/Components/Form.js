@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 function BasicExample() {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-
+  const [phone, setPhone] = useState();
   return (
     <div>
     <Form>
@@ -16,8 +16,11 @@ function BasicExample() {
        
         <Form.Text className="text-muted">
           {/* We'll never share your email with anyone else. */}
-        </Form.Text>
+        </Form.Text>  
       </Form.Group>
+
+
+      
     <label>password:</label>
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label></Form.Label>
@@ -26,6 +29,9 @@ function BasicExample() {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Check me out" />
       </Form.Group>
+
+
+      
       <Button variant="primary" type="submit">
         Submit
       </Button>

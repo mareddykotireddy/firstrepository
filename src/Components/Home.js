@@ -5,6 +5,7 @@ const Home = () => {
     const [age, setAge] = useState();
     const [email, setEmail] = useState();
     const [Adress, setAdress] = useState();
+    const [phoneNo, setPhoneNo] = useState();
     const [submit, setSubmit] = useState(false);
   
     const clicked = (e) => {
@@ -59,6 +60,21 @@ const Home = () => {
           {submit && !Adress ? (
             <p style={{ color: "red" }}>Please enter your Adress</p>
           ) : null}
+
+<label>phoneNo :</label>
+          <input
+            placeholder="enter your phone number"
+            name="name"
+            style={{ width: "200px" }}
+            onChange={(e) => setPhoneNo(e.target.value)}
+          />
+          {submit && !setPhoneNo ? (
+            <p style={{ color: "red" }}>Please enter your phoneNo</p>
+          ) : null}
+
+
+
+
   
           <button type="submit" style={{ width: "200px" }} onClick={clicked}>
             Save
@@ -70,6 +86,8 @@ const Home = () => {
           <p>Age: {age}</p>
           <p>Email: {email}</p>
           <p>Address: {Adress}</p>
+          <p>phoneNo: {phoneNo}</p>
+
         </div>
         {name}
         <BasicExample/>
